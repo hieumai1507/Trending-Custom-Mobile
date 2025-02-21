@@ -34,20 +34,26 @@ export const footerData = {
     {
       title: "Policies",
       links: [
-        { title: "Privacy Policy", url: "#" },
-        { title: "Cancellation & Modification", url: "#" },
-        { title: "Replacement & Refund Policy", url: "#" },
+        { title: "Privacy Policy", url: "PrivacyPolicy" },
+        {
+          title: "Cancellation & Modification",
+          url: "CancellationAndModification",
+        },
+        { title: "Replacement & Refund Policy", url: "ReplacementRefund" },
         { title: "Shipping Policy", url: "#" },
         { title: "Payment Method", url: "#" },
-        { title: "Terms of Service", url: "#" },
-        { title: "Intellectual Property Claim", url: "#" },
+        { title: "Terms of Service", url: "TermOfServices" },
+        {
+          title: "Intellectual Property Claim",
+          url: "IntellectualPropertyClaim",
+        },
       ],
     },
     {
       title: "Help",
       links: [
-        { title: "Help Center", url: "#" },
-        { title: "Contact Us", url: "#" },
+        { title: "Help Center", url: "HelpCenter" },
+        { title: "Contact Us", url: "ContactUs" },
         { title: "Size Guide", url: "#" },
         { title: "Valentine Cutoff Date", url: "#" },
       ],

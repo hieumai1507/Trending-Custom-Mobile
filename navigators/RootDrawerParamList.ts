@@ -4,6 +4,7 @@ export type DrawerParamList = {
   Home: undefined;
   BestSellers: undefined;
   Blogs: undefined;
+  Wishlist: undefined;
   Cart: undefined;
   Profile: undefined;
 };

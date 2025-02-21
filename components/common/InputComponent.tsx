@@ -1,16 +1,13 @@
-import {
-  View,
-  Text,
-  TouchableOpacity,
-  TextInput,
-  StyleSheet,
-  TextInputProps,
-  KeyboardType,
-} from "react-native";
-import React, { ReactNode, useState } from "react";
 import { appColors } from "@/constants/appColors";
 import { AntDesign, FontAwesome } from "@expo/vector-icons";
-import { globalStyles } from "@/styles/global";
+import React, { ReactNode, useState } from "react";
+import {
+  KeyboardType,
+  StyleSheet,
+  TextInput,
+  TouchableOpacity,
+  View,
+} from "react-native";
 interface Props {
   value: string;
   onChange: (val: string) => void;

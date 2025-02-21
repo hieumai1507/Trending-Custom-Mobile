@@ -21,11 +21,11 @@ export const concernOptions = [
 export const helpLinks = [
   { label: "Track my order", link: "/pages/tracking-order" },
   { label: "Shipping & Delivery", link: "/" },
-  { label: "FAQs", link: "/pages/faqs" },
-  { label: "Returns & Refunds", link: "/pages/replacement-refund" },
+  { label: "FAQs", link: "HelpCenter" },
+  { label: "Returns & Refunds", link: "ReplacementRefund" },
   {
     label: "Cancellation & Modification",
-    link: "/pages/cancellation-modification",
+    link: "CancellationAndModification",
   },
 ];
 

@@ -1,12 +1,12 @@
 import {
-  Truck,
-  Package,
+  CreditCard,
   Edit,
+  MessageCircle,
+  Package,
+  Percent,
   RotateCcw,
   ShoppingCart,
-  Percent,
-  CreditCard,
-  MessageCircle,
+  Truck,
 } from "lucide-react";
 
 export interface FaqItemContent {
@@ -135,41 +135,41 @@ export const helpTopics = [
   {
     icon: Truck,
     label: "Shipment & Delivery",
-    link: "#",
+    link: "",
   },
   {
     icon: Package,
     label: "Product Information",
-    link: "#",
+    link: "",
   },
   {
     icon: Edit,
     label: "Modification & Cancellation",
-    link: "/pages/cancellation-modification",
+    link: "CancellationAndModification",
   },
   {
     icon: RotateCcw,
     label: "Replacement & Refund",
-    link: "/pages/replacement-refund",
+    link: "ReplacementRefund",
   },
   {
     icon: ShoppingCart,
     label: "Order Placement",
-    link: "#",
+    link: "",
   },
   {
     icon: Percent,
     label: "Discount Code",
-    link: "#",
+    link: "",
   },
   {
     icon: CreditCard,
     label: "Payment",
-    link: "#",
+    link: "",
   },
   {
     icon: MessageCircle,
     label: "Additional Support",
-    link: "#",
+    link: "",
   },
 ];

@@ -1,3 +1,8 @@
+import Facebook from "@/assets/svg/FacebookConvert";
+import Google from "@/assets/svg/GoogleConvert";
+import { appColors } from "@/constants/appColors";
+import fonts from "@/constants/fonts";
+import { COMMON } from "@/constants/textConstant";
 import React from "react";
 import {
   ButtonComponent,
@@ -5,11 +10,6 @@ import {
   SpaceComponent,
   TextComponent,
 } from "./common";
-import { appColors } from "@/constants/appColors";
-import fonts from "@/constants/fonts";
-import Google from "@/assets/svg/GoogleConvert";
-import { COMMON } from "@/constants/textConstant";
-import Facebook from "@/assets/svg/FacebookConvert";
 
 export default function SocialLogin() {
   return (

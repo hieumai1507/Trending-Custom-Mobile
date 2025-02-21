@@ -17,7 +17,7 @@ const CartSubtotal: FC<CartSubtotalProps> = ({
   const [checked, setChecked] = useState(subtotal.priorityProduction);
 
   return (
-    <View className="p-4 bg-white rounded-lg border space-y-4">
+    <View className="p-4 bg-white rounded-lg border space-y-4 mx-1">
       <Text className="text-lg font-semibold">Cart Subtotal</Text>
 
       <View className="space-y-2">
@@ -31,14 +31,22 @@ const CartSubtotal: FC<CartSubtotalProps> = ({
         </View>
       </View>
 
-      <View className="flex-row items-start gap-2 bg-gray-50 p-3 rounded-lg">
-        <Checkbox
-          status={checked ? "checked" : "unchecked"}
-          onPress={() => {
-            setChecked(!checked);
-            onPriorityProductionChange(!checked);
-          }}
-        />
+      <Pressable
+        className="flex-row items-start gap-2 bg-gray-50 p-3 border-2 border-gray-100 mb-2  rounded-lg"
+        onPress={() => {
+          setChecked(!checked);
+          onPriorityProductionChange(!checked);
+        }}
+      >
+        <View className="border-2 border-gray-500 rounded-full">
+          <Checkbox
+            status={checked ? "checked" : "unchecked"}
+            onPress={() => {
+              setChecked(!checked);
+              onPriorityProductionChange(!checked);
+            }}
+          />
+        </View>
         <View className="flex-1">
           <View className="flex-row justify-between items-baseline">
             <Text className="font-bold">Priority Production</Text>
@@ -48,7 +56,7 @@ const CartSubtotal: FC<CartSubtotalProps> = ({
             Move your order to the front of the line for faster processing
           </Text>
         </View>
-      </View>
+      </Pressable>
 
       <View className="border-t pt-4 space-y-2">
         <View className="flex-row justify-between font-semibold">
@@ -68,9 +76,9 @@ const CartSubtotal: FC<CartSubtotalProps> = ({
           </Text>
           <Pressable
             // onPress={() => router.push("/learn-more")}
-            className="text-blue-600 text-sm underline"
+            className=""
           >
-            <Text>Learn more</Text>
+            <Text className="text-blue-600 text-sm underline">Learn more</Text>
           </Pressable>
         </View>
       </View>

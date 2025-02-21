@@ -1,17 +1,17 @@
+import { footerData } from "@/data/footer-data";
+import { HomeStackNavigationProp } from "@/navigators/RootStackParamList";
+import { useNavigation } from "expo-router";
+import { ChevronDownIcon } from "lucide-react-native";
 import React, { ReactNode } from "react";
 import {
-  View,
+  Image,
+  Linking,
   Text,
   TextInput,
   TouchableOpacity,
-  Image,
-  Linking,
   useWindowDimensions,
+  View,
 } from "react-native";
-import { ChevronDownIcon } from "lucide-react-native";
-import { footerData } from "@/data/footer-data";
-import { useNavigation } from "expo-router";
-import { HomeStackNavigationProp } from "@/navigators/RootStackParamList";
 interface FooterSectionProps {
   title: string;
   children: ReactNode;

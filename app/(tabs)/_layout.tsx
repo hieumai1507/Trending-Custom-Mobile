@@ -9,7 +9,12 @@ import BLogs from "./Blogs";
 import Cart from "./Cart";
 import Home from "./Home";
 import Profile from "./Profile";
-import { FontAwesome5, FontAwesome6 } from "@expo/vector-icons";
+import {
+  FontAwesome5,
+  FontAwesome6,
+  MaterialCommunityIcons,
+} from "@expo/vector-icons";
+import Wishlist from "./Wishlist";
 
 const Drawer = createDrawerNavigator<DrawerParamList>();
 
@@ -50,6 +55,19 @@ export default function DrawerLayout() {
           options={{
             drawerIcon: ({ color, size }) => (
               <FontAwesome5 name="blog" size={size} color={color} />
+            ),
+          }}
+        />
+        <Drawer.Screen
+          name={MENU.WISHLIST}
+          component={Wishlist}
+          options={{
+            drawerIcon: ({ color, size }) => (
+              <MaterialCommunityIcons
+                name="cart-heart"
+                size={size}
+                color={color}
+              />
             ),
           }}
         />

@@ -32,7 +32,7 @@ const ProductDetailScreen = () => {
   return (
     <FlatList
       className=" bg-white pt-5"
-      data={[{ key: "mainContentCart" }]} // Dummy data to render SectionProduct
+      data={[{ key: "mainContentProductDetail" }]} // Dummy data to render SectionProduct
       renderItem={() => (
         <MainContentProductDetail product={product} navigation={navigation} />
       )} // Render SectionProduct

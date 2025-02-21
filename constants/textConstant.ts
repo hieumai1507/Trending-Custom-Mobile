@@ -2,6 +2,7 @@ export const MENU = {
   HOME: "Home",
   BESTSELLERS: "BestSellers",
   BLOGS: "Blogs",
+  WISHLIST: "Wishlist",
   CART: "Cart",
   PROFILE: "Profile",
 } as const;

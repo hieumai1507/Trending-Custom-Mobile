@@ -23,14 +23,6 @@ const Header: React.FC = () => {
 
   return (
     <SafeAreaView className="bg-white">
-      {/* Promo Bar */}
-      <View className="bg-[#FF4B2B] py-4 px-4">
-        <Text className="text-white text-center">
-          🎉 Order 2+ items to SAVE 10% using code:{" "}
-          <Text className="font-bold">TRC10</Text>
-        </Text>
-      </View>
-
       {/* Header Main Section */}
       <View className="flex-row justify-between items-center px-4 ">
         {/* Drawer Toggle */}
@@ -39,7 +31,6 @@ const Header: React.FC = () => {
         <Pressable onPress={() => navigation.navigate("Home")}>
           <Image
             source={require("@/assets/images/splash-logo.png")}
-            // className={`w-[${width * 0.25}] h-[${height * 0.1}]`}
             style={{
               width: width * 0.25,
               height: height * 0.1,
@@ -50,7 +41,7 @@ const Header: React.FC = () => {
 
         {/* Right Icons */}
         <View className="flex-row space-x-4 gap-4">
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate("Wishlist")}>
             <Ionicons name="heart-outline" size={24} color="black" />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => setIsModalVisible(true)}>
