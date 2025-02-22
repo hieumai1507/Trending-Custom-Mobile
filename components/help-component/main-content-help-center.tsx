@@ -160,7 +160,7 @@ const MainContentHelpCenter = () => {
           keyExtractor={(item, index) => index.toString()}
           renderItem={({ item }) => (
             <TouchableOpacity
-              className="bg-white border border-gray-400 shadow-md p-4 items-center justify-center rounded-md m-2 w-1/2 h-20" // w-1/2, h-20
+              className="bg-white border border-gray-400  items-center justify-center rounded-md m-auto w-[40%] h-20 mb-4" // w-1/2, h-20
               onPress={() => navigation.navigate(item.link)}
             >
               <Text className="text-gray-700 text-sm text-center mt-2">
